@@ -1,11 +1,11 @@
 QT += core
 QT -= gui
 
-TARGET = QThreadTestCase
+TARGET = Skeleton_Qt_Thread
 CONFIG += console
 CONFIG -= app_bundle
 
 TEMPLATE = app
 
-SOURCES += main.cpp
+SOURCES += skeleton_thread.cpp
 
