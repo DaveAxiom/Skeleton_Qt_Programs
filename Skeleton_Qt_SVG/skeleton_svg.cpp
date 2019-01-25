@@ -71,7 +71,7 @@ int main(int argc, char *argv[])
 
 #if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
     FileDialog.setMimeTypeFilters(QStringList() << "image/svg+xml" << "image/svg+xml-compressed");
-    FileDialog.setWindowTitle(tr("Open SVG File"));
+    FileDialog.setWindowTitle(QApplication::tr("Open SVG File"));
 #else
     FileDialog.setNameFilters(QStringList() << "SVG files (*.svg)");
     FileDialog.setWindowTitle("Open SVG File");
