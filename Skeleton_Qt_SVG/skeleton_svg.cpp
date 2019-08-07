@@ -58,11 +58,16 @@ private:
     }
 };
 
+class QGraphicsViewDialog: public QGraphicsView
+{
+protected:
+    void closeEvent(QCloseEvent*) { qApp->quit(); }
+};
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    QGraphicsView view;
+    QGraphicsViewDialog view;
     QGraphicsScene* scene = new QGraphicsScene(&view);
     view.setScene(scene);
 
